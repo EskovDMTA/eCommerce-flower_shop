@@ -1,0 +1,133 @@
+.register-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.register-login-title,
+.register-register-title {
+  font-family: Cera Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.register-register-title {
+  color: var(--green-color);
+}
+
+.register-login-title {
+  color: var(--black-color);
+}
+
+.register-login-title:visited {
+  color: var(--black-color);
+}
+
+.register-text,
+.register-adress_text,
+.register-adress_text-billing {
+  margin-top: 20px;
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.check-box-block {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.adress-checkbox,
+.address-default-checkbox,
+.adress-default-checkbox,
+.address-billing-default-checkbox {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+  accent-color: var(--green-color);
+}
+
+.address-default-label,
+.adress-checkbox-label,
+.adress-checkbox-default-label,
+.address-billing-default-label {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.address-default-checkbox:checked::before,
+.adress-checkbox:checked::before {
+  background-color: var(--green-color);
+}
+
+.register-email_box,
+.register-password_box,
+.register-first-name_box,
+.register-last-name_box,
+.register-date-birth_box,
+.register-street_box,
+.register-city_box,
+.register-postal_box,
+.register-country_box,
+.register-street_box-billing,
+.register-city_box-billing,
+.register-postal_box-billing,
+.register-country_box-billing {
+  margin-top: 16px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+  padding: 12px 14px;
+}
+
+.register-register_btn {
+  margin-top: 43px;
+  width: 300px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+#autocomplete {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 30px;
+}
+
+#autocomplete li {
+  border: 1px solid var(--grey-color);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+#autocomplete li:hover {
+  background-color: rgba(117, 225, 112, 0.6);
+}

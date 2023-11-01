@@ -1,0 +1,232 @@
+#profile {
+    display: flex;
+}
+
+.profile-section {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    gap: 5%;
+}
+
+.profile-nav {
+    background-color: #FBFBFB;
+    width: 250px;
+    height: max-content;
+    margin-bottom: 40px;
+}
+
+.profile-subtitle {
+    display: flex;
+    font-size: 16px;
+    padding: 15px 0;
+    font-family: Cera Pro;
+}
+
+.logout-link,
+.profile-link {
+    display: flex;
+    font-size: 15px;
+    padding: 15px 25px;
+    align-items: center;
+    width: 250px;
+}
+
+.logout-link:hover,
+.profile-link:hover {
+    cursor: pointer;
+    background-color: var(--grey-color);
+}
+
+.logout-link {
+    border-top: 1px solid var(--grey-color);
+}
+
+.profile-text {
+    font-family: Cera Pro;
+}
+
+.logout-icon,
+.profile-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(47%) sepia(0%) saturate(1818%) hue-rotate(339deg) brightness(93%) contrast(95%);
+    margin-right: 10px;
+}
+
+.active-link {
+    border-left: 5px solid var(--green-color);
+    padding-left: 20px;
+    color: var(--green-color);
+}
+
+.user-icon {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    filter: invert(47%) sepia(0%) saturate(1818%) hue-rotate(339deg) brightness(93%) contrast(95%);
+}
+
+.active-link .profile-icon {
+    filter: none;
+}
+
+.profile-label {
+    display: block;
+    font-family: Cera Pro;
+    font-size: 15px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 20%;
+}
+
+.addresses-container {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+.address-form {
+    min-width: 30%;
+    margin-bottom: 40px;
+}
+
+.change-icon,
+.delete-icon {
+    margin-left: 20px;
+}
+
+.change-icon:hover,
+.delete-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.profile-change_btn,
+.password-change_btn,
+.address-change_btn,
+.address-add_btn {
+    width: 300px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--green-color);
+    color: var(--white-color);
+    font-family: Cera Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.profile-change_btn:hover,
+.password-change_btn:hover,
+.address-change_btn:hover {
+    transform: scale(1.05);
+}
+
+.profile-change_btn:disabled,
+.address-change_btn:disabled {
+    background: var(--grey-color);
+    cursor: default;
+    transform: none;
+}
+
+.check-box-addressForm {
+    display: flex;
+    align-items: baseline;
+}
+
+.default-address-message {
+    font-size: Cera Pro;
+    font-size: 14px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    padding: 3px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.first-name-error_list,
+.last-name-error_list,
+.dob-error_list,
+.email-error_list,
+.current-password-error_list,
+.new-password-error_list,
+.check-password-error_list {
+    margin-top: 5px;
+    color: rgba(255, 0, 0, 0.73);
+    font-size: 12px;
+    width: 300px;
+}
+
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+.new-address-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    width: 900px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    background-color: var(--light-green-color);
+    border-radius: 20px;
+}
+
+.addresses-change-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .profile-section {
+        margin: 0 40px 40px;
+        gap: 5%;
+    }
+
+    .new-address-container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .profile-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile-section {
+        margin: 0 40px 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+}

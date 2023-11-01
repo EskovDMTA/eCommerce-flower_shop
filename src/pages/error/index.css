@@ -1,0 +1,42 @@
+.error-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.error-text_block {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-title {
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.back-to-main {
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.back-to-main:hover {
+  font-weight: 700;
+}
+
+.error-img {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}

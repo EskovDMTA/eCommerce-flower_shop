@@ -1,0 +1,197 @@
+.login-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container,
+.register-container {
+  padding: 40px 0;
+  margin-top: 20px;
+  width: 500px;
+  background: linear-gradient(135deg, rgba(245, 245, 245, 0.50) 0%, rgba(245, 245, 245, 0.50) 100%);
+}
+
+.login-block,
+.register-block {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.login-title-block,
+.register-title-block {
+  display: flex;
+  justify-content: center;
+}
+
+.login-title-line,
+.register-title-line {
+  color: #3D3D3D;
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 16px;
+  padding: 0 10px;
+}
+
+.login-title,
+.login-register-title {
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.login-register-title {
+  color: var(--black-color);
+}
+
+.login-register-title:visited {
+  color: var(--black-color);
+}
+
+.login-text {
+  margin-top: 20px;
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.login-login_box,
+.login-password_box {
+  margin-top: 16px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+  padding: 12px 14px;
+}
+
+.login-login_btn {
+  margin-top: 43px;
+  width: 300px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+
+.login-error_container, .password-error_container, .register-email-error_list,
+.register-password-error_list, .register-first-name-error_list,
+.register-last-name-error_list, .register-dob-error_list,
+.register-street-error_list, .register-city-error_list,
+.register-postal-code-error_list, .register-country-error_list,
+.register-billing-street-error_list, .register-billing-city-error_list,
+.register-billing-postal-code-error_list, .register-billing-country-error_list,
+.street-error_list, .city-error_list, .country-error_list, .postal-code-error_list{
+  margin-top: 5px;
+  color: rgba(255, 0, 0, 0.73);
+  font-size: 12px;
+}
+
+.password-error_item::before {
+  content: "❗";
+}
+
+.login-error_list, .password-error_list, .register-email-error_list,
+.register-password-error_list, .register-first-name-error_list,
+.register-last-name-error_list, .register-dob-error_list,
+.register-street-error_list, .register-city-error_list,
+.register-postal-code-error_list, .register-country-error_list,
+.register-billing-street-error_list, .register-billing-city-error_list,
+.register-billing-postal-code-error_list, .register-billing-country-error_list{
+  list-style-type: none;
+  animation: fade-in 2s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.login-error_item {
+  margin-top: 10px;
+}
+
+.login-error_item::before {
+  content: "❗";
+}
+
+.input-shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.invalid-input {
+  background-color: var(--error-color);
+  border: 1px solid red;
+}

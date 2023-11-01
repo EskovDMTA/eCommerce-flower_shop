@@ -1,0 +1,46 @@
+@import url("assets/fonts/fonts.css");
+
+:root {
+  --black-color: #3D3D3D;
+  --green-color: #46A358;
+  --light-green-color: rgba(70, 163, 88, 0.05);
+  --grey-color: #EAEAEA;
+  --light-grey-color: #FBFBFB;
+  --white-color: #FFF;
+  --error-color: rgba(218, 30, 30, 0.77);
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: 0.5s ease;
+  scroll-behavior: smooth;
+  border: none;
+  transition: all ease-in 0.3s;
+}
+
+input, 
+select {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--grey-color);
+  padding: 12px 14px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

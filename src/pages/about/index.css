@@ -1,0 +1,122 @@
+.about-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.about-title-block {
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.about-title {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.about-rs-block {
+  width: 140px;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.about-collaboration-block {
+  margin-top: 10px;
+}
+
+.about-collaboration-key,
+.about-collaboration-text {
+  margin-right: 5px;
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.about-collaboration-text {
+  color: var(--black-color);
+  margin-top: 5px;
+}
+
+.about-items {
+  margin-top: 40px;
+  display: grid;
+  grid-gap: 3vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.member-item {
+  justify-self: center;
+  max-width: 300px;
+}
+
+.member-name {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.member-photo {
+  margin-top: 10px;
+  max-width: 100%;
+  object-fit: contain;
+  justify-self: center;
+  border-radius: 10%;
+}
+
+.member-block {
+  margin-top: 20px;
+}
+
+.member-key {
+  margin-right: 5px;
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.member-role,
+.member-git,
+.member-contibutions {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.member-git {
+  cursor: pointer;
+}
+
+.member-git:hover {
+  text-decoration: underline;
+}
+
+.member-git:visited {
+  color: var(--black-color);
+}
+
+.member-bio {
+  color: #3D3D3D;
+  font-family: Cera Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}

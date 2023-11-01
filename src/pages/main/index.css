@@ -1,0 +1,160 @@
+.welcome-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: linear-gradient(135deg, rgba(245, 245, 245, 0.50) 0%, rgba(245, 245, 245, 0.50) 100%);
+  padding: 26px 0 0 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.welcome-text_block {
+  width: 557px;
+}
+
+.welcome-title1 {
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.promocodes-block {
+  margin-top: 30px;
+  font-family: Cera Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.promocodes-text {
+  margin-top: 10px;
+  font-family: Cera Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--green-color);
+}
+
+.welcome-title2 {
+  margin-top: 6px;
+  color: var(--black-color);
+  font-family: Cera Pro;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.planet-text {
+  margin-top: 5px;
+  color: var(--green-color);
+  font-family: Cera Pro;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.welcome-text_block p {
+  color: #727272;
+  font-family: Cera Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.welcome-text_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44px;
+  width: 140px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--green-color);
+  color: #FFF;
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.welcome_img {
+  display: flex;
+  align-items: end;
+  position: relative;
+  width: 518px;
+  height: 518px;
+}
+
+.welcome-img_small {
+  width: 135px;
+  height: 135px;
+  position: absolute;
+  top: 270px;
+  right: 320px;
+
+}
+
+.welcome-img_big {
+  position: absolute;
+  top: -80px;
+  right: -20px;
+  z-index: 1;
+}
+
+.buttons-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-btn-authorized,
+.register-btn-authorized {
+  margin-left: 15px;
+  width: 100px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--green-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-btn-authorized p,
+.register-btn-authorized p {
+  margin-left: 4px;
+  color: #FFF;
+  font-family: Cera Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 800px) {
+
+  .welcome_img {
+    display: none;
+  }
+
+}
